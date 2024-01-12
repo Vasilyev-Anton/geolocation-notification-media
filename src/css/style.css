@@ -1,0 +1,116 @@
+body,
+button,
+input {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+button {
+  cursor: pointer;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: 0 5px;
+}
+
+form {
+  border: 1px solid #000;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #bbb;
+  border-radius: 0;
+}
+
+#timeline {
+  overflow-y: auto;
+  direction: rtl;
+}
+
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 700px;
+  height: 500px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+#message-form > input[type="text"] {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#messages-container {
+  flex-grow: revert;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  overflow-y: scroll;
+}
+
+#message-form {
+  all: unset;
+  width: 95%;
+  display: flex;
+  margin: auto;
+  border-radius: 15px;
+}
+
+#button-box {
+  display: flex;
+  justify-content: end;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 2px solid #bbb;
+  border-radius: 15px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.post-coordinates {
+  display: flex;
+  direction: ltr;
+}
+
+.post-datetime {
+display: flex;
+justify-content: flex-end;
+direction: ltr;
+}
+
+.post-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
